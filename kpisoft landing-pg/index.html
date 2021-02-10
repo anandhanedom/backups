@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Careers Tomorrow</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-light" style="background-color: #fff">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./img/logo.png"
+            alt=""
+            width="170"
+            class="d-inline-block align-top"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Section : HEADER -->
+    <header>
+      <div class="container d-flex flex-column py-5">
+        <h1 class="text-capital display-5" style="font-weight: 500">
+          Do you have the right skills to do your DREAM JOB?
+        </h1>
+        <h4 class="text-muted fw-light">
+          Type your job title into the search box below to find out all the
+          skills and proficiencies needed.
+        </h4>
+        <h4 class="text-muted fw-light">
+          How do you remain Future Ready and Relevant? What do you need to do to
+          upgrade your skills?
+        </h4>
+        <img
+          width="50%"
+          style="max-height: 800px; display: block; margin: 0 auto"
+          src="./img/people.jpg"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <!-- Section : SEARCH -->
+    <section class="">
+      <div class="container border" style="max-width: 600px">
+        <div class="p-2 text-center">
+          <fieldset>
+            <legend>I'm a ...</legend>
+            <div class="mb-3">
+              <!-- <label for="disabledSelect" class="form-label"
+                >Rather search by typing?
+                <a href="">Back to job search</a></label
+              > -->
+
+              <form autocomplete="off" id="form">
+                <div class="autocomplete">
+                  <input
+                    id="myInput"
+                    type="text"
+                    name="myCountry"
+                    placeholder="Data scientist"
+                  />
+                </div>
+                <button type="submit" style="font-weight: 500" id="submitBtn">
+                  Find skills
+                </button>
+              </form>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section : SKILLS -->
+    <section class="py-5 fs-5">
+      <div class="container skillContainer" id="skillContainer"></div>
+    </section>
+
+    <!-- Section : ARTICLE -1 -->
+    <section class="py-5 fs-5">
+      <div class="container">
+        <h1 class="display-6 mb-3 fw-normal">
+          Challenges that workforces are grappling with:
+        </h1>
+        <p class="fw-light">
+          The ongoing economic uncertainty is bringing massive changes across
+          industries and workplaces. And enormous shifts are predicted in how we
+          work to what skills we will need.
+        </p>
+        <p class="fw-light">
+          In this environment, it is crucial that we identify and are
+          successfully able to predict emerging skill gaps, and how we can stay
+          relevant in the future.
+        </p>
+        <p class="fw-light">
+          Our solution <b>“Careers Tomorrow”</b> empowers the workforce to
+          receive guidance on their current skills, recommend the skills needed
+          to remain relevant in the future, explore career paths aligned to
+          suitable learning and job opportunities.
+        </p>
+
+        <div class="row">
+          <div class="col-md-5 order-md-2">
+            <img src="./img/careers.jpg" style="width: 100%" alt="" />
+          </div>
+          <div class="col-md-7 order-md-1">
+            <p class="fw-light">
+              The app serves as a digital career coach that uses augmented
+              analytics to provide the user the opportunity to:
+            </p>
+
+            <ul class="fw-light">
+              <li>
+                Understand skills, performance achievement, potential, and
+                aspirations
+              </li>
+              <li>
+                Contextualized skill gap analysis for current and aspired roles
+              </li>
+              <li>Provide career recommendations for today and tomorrow</li>
+              <li>View Skills Trends and Competencies required for future</li>
+              <li>
+                Get actionable recommendations on career paths and
+                Technical/Behavioural assessments
+              </li>
+              <li>Personalized Learning Recommendations and Timely Nudges</li>
+              <li>Virtual Community for Knowledge sharing and learning</li>
+            </ul>
+
+            <p class="fw-light">
+              The app is designed to help individuals as well as enterprises to
+              improve lifelong employability through skills upgrading and
+              continuous learning. The Careers Tomorrow App is available on iOS
+              App and Google Play Store - <a href="">LINK</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section : ARTICLE -2 -->
+
+    <section class="py-5 fs-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 order-md-1">
+            <img src="./img/talk.jpg" style="width: 100%" alt="" />
+          </div>
+          <div class="col-md-7 order-md-2">
+            <h1 class="display-6 mb-3 fw-normal">
+              How to remain Future Ready and Relevant?
+            </h1>
+            <p class="fw-light">
+              The Careers Tomorrow platform, powered by KPISOFT has been
+              successfully delivering talent-driven value to enterprises across
+              the globe. The aim is to enable Career and Skill Development and
+              help Team Leaders and Individuals to analyze and provide a better
+              understanding of their current skills, and recommend the skills
+              needed to navigate their careers with personalized learning to
+              possible jobs and charting journeys to progress their careers.
+            </p>
+            <a href="">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+
+    <script>
+      autocomplete(document.getElementById('myInput'), jobs);
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
